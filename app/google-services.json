@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "426618868878",
+    "firebase_url": "https://my-parkme.firebaseio.com",
+    "project_id": "my-parkme",
+    "storage_bucket": "my-parkme.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426618868878:android:adfd7529603c3fb3",
+        "android_client_info": {
+          "package_name": "ua.lviv.iot.myparkme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426618868878-h72nfs3e1u8ml5d6l7k194l2h94d0vs4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ua.lviv.iot.myparkme",
+            "certificate_hash": "1313a60258cfd693c29eb8f9e5580dee95ef0722"
+          }
+        },
+        {
+          "client_id": "426618868878-p3rbft6c72ee8psg6b6qqtrv3l8vbbf8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzUOzU1c8PKnkBDHupGxWT0jabjlM4aUk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426618868878-p3rbft6c72ee8psg6b6qqtrv3l8vbbf8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
