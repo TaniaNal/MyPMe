@@ -13,9 +13,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -44,7 +46,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, NavigationView.OnNavigationItemSelectedListener {
 
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 111;
     private static final int LOCATION_REQUEST = 500;
@@ -336,6 +338,23 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
             }
         });
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_settings) {
+        }   else if (id == R.id.nav_singout) {
+        }   else if (id == R.id.nav_location) {
+        }   else if (id == R.id.nav_aboutus) {
+            Intent i = new Intent(MapsActivity.this, PhotoParkingActivity.class);
+            startActivity(i);
+        }   else if (id == R.id.nav_tools) {
+
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public class TaskRequestDirections extends AsyncTask<String, Void, String> {
